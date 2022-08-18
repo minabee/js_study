@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <button onclick="getTest()">확인</button>
+    <!-- select box -->
+    <select id="menu">
+        <option value="돈까스">돈까스</option>
+        <option value="치즈라면">치즈라면</option>
+        <option value="볶음밥">볶음밥</option>
+        <option value="함박스테이크">함박스테이크</option>
+    </select>
+    <!-- radio button -->
+    <!-- name 이름 오타 조심 -->
+    <!-- radio input태그에 name은 동일해야함! -->
+    SKT : <input type="radio" name="phone" value="SKT">
+    LG : <input type="radio" name="phone" value="LG">
+    KT : <input type="radio" name="phone" value="KT">
+    <!-- textarea -->
+    <textarea id="board" cols="30" rows="10"></textarea>
+    <!-- 문제 1. SKT를 선택하면 SKT 고객이군요! 라는 문구 출력! -->
+    <button onclick="getService()">통신사확인</button>
+    <!-- 문제 2. 메뉴에서 볶음밥을 선택했으면, 볶음밥을 선택했군요! 출력! -->
+    <button onclick="getMenu()">메뉴확인</button>
+</body>
+<script>
+
+    function getService(){
+        var phone = document.querySelector('input[name=phone]:checked').value;
+        console.log(phone);
+        if(phone == 'SKT'){
+            console.log('SKT 고객이군요!');
+        }
+    }
+    function getMenu(){
+        var menu = document.getElementById('menu').value;
+        console.log(menu);
+        if(menu == '볶음밥'){
+            console.log('볶음밥을 선택했군요!');
+        }
+    }
+    //***자바스크립트 함수(function)는 리턴타입이 없다.
+    function getTest(){
+       //자바스크립트로 input 값 가져오는 방법
+       var a = document.getElementById('name').value;
+       console.log(a);
+       //자바스크립트로 select box 값 가져오는 방법
+       var menu = document.getElementById('menu').value;
+       console.log(menu);
+       //자바스크립트로 라디오 버튼 값 가져오는 방법
+       var phone = document.querySelector('input[name=phone]:checked').value;
+       console.log(phone);
+       //자바스크립트로 textarea 값 가져오는 방법
+       var board = document.getElementById('board').value;
+       console.log(board);
+    }
+</script>
+</html>
