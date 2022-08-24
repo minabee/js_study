@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    //json (JavaScript Object Notaion)
+    //json은 데이터 형식
+    //사용하는 이유 : 서버(Java, node.js, python 등등)에 데이터를 전송하기 위해서 사용.
+    //json은 key하고 value로 이루어짐
+    //key 이름은 중복될 수 없다.
+    var x = { name : "홍길동", age : 40, hobby: "등산"};
+    //name은, key 홍길동은 value가 된다.
+    console.log(x.name); // 이름 출력하기
+    console.log(x.age); //나이 출력하기
+    //문제 1. hobby가 등산이면 좋은 취미를 가졌네요! 출력하기!(console.log)
+    if(x.hobby == '등산') {
+        console.log('좋은 취미를 가졌네요!');
+    }
+    var information = {job : "전사", level : 55, server : "베라"};
+    //문제1. information에 있는 모든 정보를 출력하시오.
+    //문제2. level 50 넘었으면 당신은 믹스골렘을 잡으로 가시오! 출력!    
+    console.log(information.job);
+    console.log(information.level);
+    console.log(information.server);
+    if(information.level >= 50){
+        console.log('믹스골렘을 잡으로 가시오!');
+    }
+
+    var dw = {addr : "대전 중구 선화동 방산빌딩", name : "DW아카데미",
+              teacher : ['최쌤','한쌤','현쌤','천쌤'] };
+    console.log(dw.teacher[0]); //json 배열 출력하는 방법
+    console.log(dw.teacher[2]);
+    
+    var melon = {가수 : 'NewJeans', 곡정보 : ['Attention','Hype boy'],
+    좋아요 : [122893, 84933]};
+    //문제1. 가수 출력
+    console.log(melon.가수);
+    //문제2. 해당 가수에 곡정보 모두 출력 (for문 사용해서)
+    console.log(melon.곡정보.length); //배열 길이 출력
+    //방법 1. js 5 문법
+    for(var i=0; i<melon.곡정보.length; i++){
+        console.log('5버전 출력 : '+melon.곡정보[i]);
+    }
+    //방법 2. js 6 문법 (6부터는 메소드 체이닝으로 모든걸 해결함)
+    melon.곡정보.forEach((i) => {
+        console.log('6버전 출력 : '+i);
+    })
+    //문제3. 해당 가수에 좋아요 총 수 출력
+    var total = melon.좋아요[0] + melon.좋아요[1];
+    console.log('좋아요 : '+total);
+
+    //배열안에 json이 들어감
+    var array = [10,20];
+    var character = [{name: '가렌', position : '탑'}, {name: '티모', position : '정글'}];
+    for(var i=0; i<character.length; i++){
+        var position = character[i].position;
+        console.log('포지션 => '+ position);
+    }
+
+</script>
+</html>
