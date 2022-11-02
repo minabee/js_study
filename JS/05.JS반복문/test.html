@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제)구구단을 문서에 출력하시오.
+
+        var output = '';
+
+        for(var i=2;i<=9;i++){
+            output += '====' + i + '단출력====<br>';
+
+            for(var j=1;j<=9;j++){
+                output += i + '×' + j + '=' + (i*j) + '<br>';
+            }
+        }
+
+        document.write(output);
+    </script>
+</html>

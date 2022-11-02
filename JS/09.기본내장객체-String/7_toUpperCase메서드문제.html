@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //toUpperCase() : 문자열을 대문자로 바꾸어 반환
+        //문제) 사용자에게 쿠폰번호를 8자리를 입력받아, 모두 대문자로 변경하여 반환하시오.
+        //-단, 8자리를 입력하지 않았다면 [8자리로 다시입력하세요]라는 경고창을 띄우시오.
+
+        var coupon = prompt('쿠폰번호를 입력하세요','8자리입력');
+
+        var num = coupon.length;
+
+        if(num == 8){
+            alert('쿠폰번호 : ' + coupon.toUpperCase());
+        }else{
+            alert('8자리로 다시입력하세요');
+        }
+
+    </script>
+</html>

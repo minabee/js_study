@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 오늘 날짜를 구해 문서에 출력하시오.
+        //예시) 2022년 04월 08일 금요일
+        //월과 일은 10보다 작은 겨우 앞에 0을 붙이시오.
+
+        //1. 오늘을 선언
+        var today = new Date();
+
+        //2. 각각의 데이터를 담는 변수선언
+        var y = today.getFullYear();
+        var m = today.getMonth() + 1;
+        var d = today.getDate();
+        var day = today.getDay(); //0~6사이 인덱스번호로 반환
+
+        //3. 요일명을 담는 배열선언
+        var week = ['일','월','화','수','목','금','토']; //일부터 시작
+
+        if(m<10){
+            m = '0' + m;
+        }
+        if(d<10){
+            d = '0' + d;
+        }
+
+        document.write(y + '년 ' + m + '월 ' + d + '일 ' + week[day] + '요일');
+        
+    </script>
+</html>

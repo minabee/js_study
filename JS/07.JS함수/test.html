@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 2초마다 [n초가 지났습니다.]라는 문자열을 문서에 출력하시오. 단, 10초까지만 출력하시오.
+
+        var num = 2;
+
+        var auto = setInterval(function(){
+            document.write(num + '초가 지났습니다<br>');
+
+            num += 2;
+        },2000);
+
+        //10초 뒤 멈춤
+        setTimeout(function(){
+            clearInterval(auto);
+        },10001);
+    </script>
+</html>

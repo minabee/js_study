@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //객체선언 문법:
+        /*
+        var 객체명 = {
+            속성명:값,
+            메서드명: function(){
+
+            } 
+        }
+        */
+       //속성(properties) : 객체가 갖고 있는 고유한 특징을 기술한 것. JS로 말하면 값이 함수가 아닌 유형.
+       //메서드(Method) : 객체가 갖고 있는 동작 혹은 객체에 주는 명령. JS로 말하면 값이 함수인 유형.
+       
+        var car = {
+            //속성 : 값이 함수가 아닌 유형
+            name: 'MINI', //문자
+            model: 'MINI COOPER S', //문자
+            color: ['red','green','blue'], //배열
+            mileage: 12.3, //숫자
+            //메서드 : 값이 함수인 유형
+            power: function(x){ //함수
+                if(x == 'on'){
+                    alert('자동차의 시동이 켜졌습니다.');
+                }else if(x == 'off'){
+                    alert('자동차의 시동이 꺼졌습니다.');
+                }
+            }
+        }
+    </script>
+</html>

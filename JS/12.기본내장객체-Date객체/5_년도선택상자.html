@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //1. 오늘을 선언
+        var today = new Date();
+
+        //2. 년도만 변수담기
+        var y = today.getFullYear();
+
+        //3. 선택상자태그를 담을 변수를 만들기
+        var ySelect = '<select>';
+
+        //4. 옵션태그 반복
+        for(var i=y;i>=1900;i--){
+            ySelect += '<option>' + i + '년</option>';
+        }
+
+        ySelect += '</select>';
+
+        document.write(ySelect);
+    </script>
+</html>

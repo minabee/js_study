@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //세터 : 숫자를 변경해서 반환 (값을 변경하는 메서드)
+
+        //1. 오늘 선언
+        var today = new Date();
+
+        document.write(today.toLocaleDateString() + '<br>');
+
+        var d = today.getDate();
+
+        today.setDate(d + 99);
+
+        document.write(today.toLocaleDateString() + '<br>');
+        
+    </script>
+</html>

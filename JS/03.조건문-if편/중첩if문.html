@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //중첩if문 : if문 안에 if문을 또 작성하는 것
+        //if(조건식){if(조건식){}}
+
+        //문제) 사용자에게 값을 입력받아 80점 이상이면 [합격], 그렇지 않으면 [불합격]을 처리하세요. 단, 점수는 0~100점 사이만 받으세요. 그렇지 않다면 [0~100사이 정수로 입력하세요]라는 경고창을 띄우세요.
+        
+        var score = prompt('점수를 입력하세요','0~100사이정수입력');
+
+        if(score >= 0 && score <= 100){
+            if(score >= 80){
+                alert('합격');
+            }else{
+                alert('불합격');
+            }
+        }else{
+            alert('0~100사이 정수로 입력하세요');
+        }
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="아메리카노" onclick="coffee(this.value)">
+    <input type="button" value="당근쥬스" onclick="coffee(this.value)">
+</body>
+    <script>
+        //매개변수(parameter) : 함수를 선언하는 부분과 호출하는 부분의 매개가 되는 변수
+        /*
+        function 함수명(){
+            코드집합
+        }
+        함수명();
+        */
+       //괄호()안에 적는 변수를 매개변수라고 함.
+       function coffee(menu){
+            alert('교실나가기');
+            alert('스타벅스가기');
+            alert(menu + '주문');
+            alert('맛있게마시기');
+        } 
+
+    </script>
+</html>

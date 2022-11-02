@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //오름차순
+        /*
+        Array객체.sort(function(a,b){
+            return a-b;
+        });
+        */
+
+        //내림차순
+        /*
+        Array객체.sort(function(a,b){
+            return b-a;
+        });
+        */
+
+        //숫자배열
+        var nums = [7,11,33,4,21];
+
+        //1.처음배열
+        document.write('처음배열 : ' + nums + '<br>');
+
+        //2.sort()로 그냥 배열
+        document.write('문자배열 : ' + nums.sort() + '<br>');
+
+        //3.숫자의 오름차순
+        nums.sort(function(a,b){
+            return a - b;
+        });
+        document.write('오름차순 : ' + nums + '<br>');
+
+        //4.숫자의 내림차순
+        nums.sort(function(a,b){
+            return b - a;
+        });
+        document.write('내림차순 : ' + nums + '<br>');
+
+
+    </script>
+</html>

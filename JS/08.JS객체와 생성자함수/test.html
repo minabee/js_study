@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 학생들의 국어, 영어, 수학점수를 통해 평균을 구하시오. 단, 생성자함수와 prototype을 이용하시오.
+        //-인스턴스는 아래 3개를 생성하시오.
+        //('홍길동',90,80,75),('김철수',100,80,90),('박영희',100,90,100)
+        
+        //1. 각각의 학생의 이름과 국어,영어,수학점수는 모두 다르기 때문에 각각 받도록 작성
+        function Score(name,kor,eng,math){
+            this.name = name;
+            this.kor = kor;
+            this.eng = eng;
+            this.math = math;
+        }
+        //2. 평균은 그 점수로 인한 결과이므로 어떤 학생이든지 간에 수식이 같으므로 메모리를 덜 차지하게 하기 위해 prototype으로 작성
+        Score.prototype.avg = function avg(){
+            return '학생이름 : ' + this.name + '<br>' + '평균 : ' + ((this.kor + this.eng + this.math) / 3).toFixed(2) + '<br>===========================<br>';
+        }
+
+        var stu01 = new Score('홍길동',90,80,75);
+        var stu02 = new Score('김철수',100,80,90);
+        var stu03 = new Score('박영희',100,90,100);
+
+        document.write(stu01.avg());
+        document.write(stu02.avg());
+        document.write(stu03.avg());
+    </script>
+</html>

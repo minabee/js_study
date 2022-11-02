@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //논리합문제) 사용자에게 주민번호 뒷자리의 첫글자를 입력받아 [1] 혹은 [3]이면 [남자], [2] 혹은 [4]이면 [여자], 나머지는 [1~4사이로 입력하세요]라고 경고창을 띄워주세요.
+
+        var firstNum = prompt('주민번호 뒷자리의 첫글자를 입력하세요','1~4사이정수입력');
+
+        if(firstNum == 1 || firstNum == 3){
+            alert('남자');
+        }else if(firstNum == 2 || firstNum == 4){
+            alert('여자');
+        }else{
+            alert('1~4사이의 숫자로 입력하세요');
+        }
+
+        //~이거나,혹은,하나라도
+    </script>
+</html>

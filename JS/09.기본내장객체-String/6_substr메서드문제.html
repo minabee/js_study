@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //substr(start,count) : 문자열의 시작번호부터 글자수까지 반환
+        //문제) 사용자에게 주민등록번호 첫 6자리를 입력받아, [당신의 생일:xx월 xx일]이라는 경고창을 띄우시오.
+        //-단, 6자리를 입력하지 않았다면 [6자리로 다시입력하세요]라는 경고창을 띄우시오.
+
+
+        var before = prompt('주민번호 첫자리를 입력하세요','6글자입력');
+
+        var num = before.length;
+        var m = before.substr(2,2);
+        var d = before.substr(4,2);
+
+        if(num == 6){
+            alert('당신의 생일: ' + m + '월 ' + d + '일');
+        }else{
+            alert('6자리로 다시입력하세요');
+        }
+    </script>
+</html>

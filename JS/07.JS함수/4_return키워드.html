@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //return키워드는 두가지 경우에 사용
+        //1. 매개변수값을 새롭게 반환하라는 의미 (return x+y;)
+        //2. 함수코드블록{}을 벗어나라는 의미 (return;)
+
+        //제곱을 구하는 함수선언
+        function square(x){
+            return x * x;
+        }
+
+        var num = prompt('제곱을 구할 수를 입력하세요','정수입력');
+
+        alert('결과 : ' + square(num));
+        
+    </script>
+</html>

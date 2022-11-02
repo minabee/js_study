@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+         var car = {
+            //속성 : 값이 함수가 아닌 유형
+            name: 'MINI', //문자
+            model: 'MINI COOPER S', //문자
+            color: ['red','green','blue'], //배열
+            mileage: 12.3, //숫자
+            //메서드 : 값이 함수인 유형
+            power: function(x){ //함수
+                if(x == 'on'){
+                    alert('자동차의 시동이 켜졌습니다.');
+                }else if(x == 'off'){
+                    alert('자동차의 시동이 꺼졌습니다.');
+                }
+            }
+        }
+        //**속성호출 : 객체.속성명 || 객체[속성명]
+        //**메서드호출 : 객체.메서드명()
+
+        //1. 객체 자체 호출 : 객체명
+        document.write(car + '<br>');
+
+        //2. 속성호출 : 객체.속성명
+        document.write(car.name + '<br>');
+        document.write(car.color[2] + '<br>');
+
+        //3. 메서드호출 : 객체.메서드()
+        car.power('on');
+
+        //변수 : 데이터를 한개 저장하는 박스
+        //배열 : 데이터를 여러개 담는 기차
+        //객체 : 데이터를 표집합 처리
+    </script>
+</html>

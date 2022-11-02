@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 사용자에게 비밀번호를 입력받아, 글자수가 8~12글자이면 [로그인 성공], 그렇지 않으면 [로그인 실패]라는 경고창을 띄우시오.
+
+        var pass = prompt('비밀번호를 입력하세요','8~12글자사이입력');
+
+        if(pass.length >= 8 && pass.length <= 12){
+            alert('로그인 성공');
+        }else{
+            alert('로그인 실패');
+        }
+    </script>
+</html>

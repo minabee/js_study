@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body> 
+    <script>
+        //생성자함수 : [객체]를 생성할 때 사용하는 함수
+        //여러개의 통일 된 속성을 가지는 객체를 생성하기 위해 필요
+        /* 생성자함수 문법
+        function 생성자함수명(매개변수){
+            this.속성 = 값;
+        }
+
+        var 변수명 = new 생성자함수명();
+        */
+
+        //생성자 함수 선언
+        function Mini(color,wheel,roof){
+            this.brand = 'Mini 3Door';
+            this.oil = 12.3;
+            this.door = 3;
+            this.color = color;
+            this.wheel = wheel;
+            this.roof = roof;
+
+            this.starting = function(x){
+                if(x == 'on'){
+                    alert(this.color + '인 ' + this.brand + '가 시동이 켜졌습니다.');
+                }else if(x == 'off'){
+                    alert(this.color + '인 ' + this.brand + '가 시동이 꺼졌습니다.');
+                }
+            }
+        }
+
+        var csCar = new Mini('Island Blue','16"Revolite Spoke','white');
+        var yhCar = new Mini('Chili Red','18"Revolite Spoke','black');
+
+        csCar.starting('on');
+        yhCar.starting('on');
+
+    </script>
+</html> 

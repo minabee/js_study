@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 사용자에게 주민번호 앞자리와 뒷자리를 입력받아, 뒷자리의 첫글자가 [1] 혹은 [2]이면 1900년생으로, [3] 혹은 [4]이면 2000년생으로 계산하여 생일을 반환하시오.
+        //-[당신의 생일: xxxx년 xx월 xx일]
+        //단,자릿수 입력이 잘못되었거나 뒷자리 첫글자가 [1~4]가 아니면 [주민번호를 잘못입력하셨습니다]라는 경고창 반환하시오.
+
+        var before = prompt('주민번호앞자리입력','6자리입력');
+        var after = prompt('주민번호뒷자리입력','7자리입력');
+
+        var num01 = before.length;
+        var num02 = after.length;
+        var first = after.charAt(0);
+        var y = before.substr(0,2);
+        var m = before.substr(2,2);
+        var d = before.substr(4,2);
+
+        if(num01 == 6 && num02 == 7 && first >= 1 && first <= 4){
+            if(first == 1 || first == 2){
+                alert('당신의 생일: 19' + y + '년 ' + m + '월 ' + d + '일');
+            }else if(first == 3 || first == 4){
+                alert('당신의 생일: 20' + y + '년 ' + m + '월 ' + d + '일');
+            }
+        }else{
+            alert('주민번호를 잘못입력하였습니다');
+        }
+
+    </script>
+</html>

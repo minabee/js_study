@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //게터 : 문자열의 일부 글자를 얻어옴 (값을 얻어오는 메서드)
+        
+        //1. 오늘 선언
+        var today = new Date();
+
+        document.write(today + '<br>');
+
+        //년,월,일을 담을 변수
+        var y = today.getFullYear();
+        var m = today.getMonth() + 1; //0~11월을 인덱스번호로 반환
+        var d = today.getDate();
+
+        //출력 : xxxx년 xx월 xx일
+        document.write(y + '년 ' + m + '월 ' + d + '일<br>');
+
+        //시,분,초를 담는 변수
+        var h = today.getHours();
+        var m2 = today.getMinutes();
+        var s = today.getSeconds();
+
+        //출력 : x시 x분 x초
+        document.write(h + '시 ' + m2 + '분 ' + s + '초');
+
+    </script>
+</html>

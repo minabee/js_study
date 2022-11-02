@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 1월~12월까지 선택상자(select)에 반환하시오.
+
+
+        //문서에 출력할 태그를 담을 변수
+        var output = '<select>';
+
+        //반복할 코드
+        for(var i=1;i<=12;i++){
+            output += '<option>' + i + '월</option>';
+        }
+
+        output += '</select>';
+
+        //문서출력
+        document.write(output);
+    </script>
+</html>

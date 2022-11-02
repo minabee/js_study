@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //부정연산자문제) confirm함수에 [결제하시겠습니까?]라고 띄우고, [취소]버튼을 누르면 [취소되었습니다]라는 경고창을 띄우세요.
+
+        //confirm - 확인과 취소버튼을 띄우는 창
+        //확인버튼을 누르면 true를 처리
+        //취소버튼을 누르면 false를 처리
+        var q = confirm('결제하시겠습니까?');
+
+        /* 
+        //비합리적인 코드
+        if(q){//확인버튼을 눌렀다면
+
+        }else{//취소버튼을 눌렀다면
+            alert('취소되었습니다');
+        }
+        */
+        
+        //false인 경우만 실행하고싶을 때 부정연산자 사용
+        if(!q){
+            alert('취소되었습니다');
+        }
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //toFixed(number) : 매개변수에 지정한 소수 자릿수만큼 반환
+
+        //문제) 사용자에게 국어,수학,영어 점수를 입력받아 평균을 구하는 프로그램을 구하시오.
+        //단, 소수둘째자리까지만 반환하시오.
+        //[평균: xx.xx점]
+
+        var kor = prompt('국어점수입력','0~100사이정수입력');
+        var math = prompt('수학점수입력','0~100사이정수입력');
+        var eng = prompt('영어점수입력','0~100사이정수입력');
+
+        var avg = (Number(kor) + Number(math) + Number(eng)) / 3;
+
+        alert('평균 : ' + avg.toFixed(2) + '점');
+    </script>
+</html>

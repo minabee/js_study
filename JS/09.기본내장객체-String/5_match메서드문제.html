@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //match(문자열) : 문자열객체에 매개변수 문자가 있다면 true를 반환
+        //문제) 사용자에게 접속한 기기를 입력받아 [아이폰],[갤럭시]면 [당신은 모바일로 접속했습니다], 그 외는 [당신은 모바일로 접속하지 않았습니다]라는 경고창을 띄우시오.
+
+        var access = prompt('접속한 기기는 무엇입니까?','아이폰? 갤럭시?');
+
+        if(access.match('아이폰') || access.match('갤럭시')){
+            alert('당신은 모바일로 접속했습니다');
+        }else{
+            alert('당신은 모바일로 접속하지 않았습니다')
+        }
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //moveBy(x,y) : 창의 위치를 상대적으로 이동
+        //moveTo(x,y) : 창의 위치를 절대적으로 이동
+
+        var newWindow = window.open('','','width=300,height=300');
+
+        newWindow.moveTo(300,300);
+
+        setInterval(function(){
+            newWindow.moveBy(20,20);
+        },1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

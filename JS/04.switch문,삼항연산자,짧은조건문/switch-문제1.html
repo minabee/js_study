@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        /*
+        switch(데이터){
+            case값1:
+                값1이 맞을때 표현식;
+                break;
+            case값2:
+                깂2기 맞을때 표현식;
+                break;
+            default:
+                값의 기본처리표현식;
+        }
+        */
+
+        //문제1) 사용자에게 주민번호 뒷자리의 첫 글자를 입력받아 [1] 혹은 [3]이면 [남자], [2] 혹은 [4]이면 [여자], 나머지는 [1~4사이로 입력하세요]라고 경고창을 띄워주세요.
+
+        var firstNum = prompt('주민번호뒷자리의 첫글자를 입력해주세요','1~4사이정수입력');
+
+        switch(firstNum){
+            case '1':
+            case '3':
+                alert('남자');
+                break;
+            case '2':    
+            case '4':
+                alert('여자');
+                break;
+            default:
+                alert('1~4사이로 입력하세요');
+                break;
+        }
+    </script>
+</html>

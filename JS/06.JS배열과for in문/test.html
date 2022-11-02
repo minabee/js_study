@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 전국 지역번호를 선택상자에 담으시오.
+
+        var output = '<select>';
+
+        var areaCode = ['02','031','032','033','041','042','043','044','051','052','053','054','055','061','062','063','064']
+        
+        for(var i=0;i<=16;i++){
+            output += '<option>' + areaCode[i] + '</option>';
+        }
+
+        output += '</select>';
+        
+        document.write(output);
+    </script>
+</html>

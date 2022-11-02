@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //문제) 오늘의 요일을 받아, 월요일~목요일이면 [평일특가:199,000원], 토요일~일요일이면 [주말특가:299,000원], 금요일이면 [금요일특가:259,000원]이라 경고창에 띄우세요.
+
+        var day = new Date().getDay();
+
+        switch(day){
+            case 1 :
+            case 2 :
+            case 3 :
+            case 4 :
+                alert('평일특가:199,000원');
+                break;
+            case 0 :
+            case 6 :
+                alert('주말특가:299,000원');
+                break;    
+            case 5 :
+                alert('금요일특가:259,000원');
+                break; 
+        }
+
+        //혹은
+        /*
+        var day = new Date().getDay();
+
+        switch(day){
+            case 0 :
+            case 6 :
+                alert('주말특가:299,000원');
+                break;    
+            case 5 :
+                alert('금요일특가:259,000원');
+                break; 
+            default:
+                alert('평일특가:199,000원');
+                break;
+        }
+        */
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //isNaN함수 : 수식이 NaN이면 true를 반환, 그렇지 않으면 false반환
+
+        //NaN(not a number) : 수식의 결과가 숫자가 아닐때 주는 키워드
+
+        var dollar = 1129;
+        var num = prompt('환전할 달러를 입력하세요','정수만입력');
+
+        if(isNaN(dollar * num)){ //숫자가 아닐때
+            alert('정수로 다시 입력하세요');
+        }else{ //숫자일때
+            alert('환전금액 : ' + (dollar * num) + '원');
+        }
+    </script>
+</html>
