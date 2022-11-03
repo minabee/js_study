@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //모바일기기 이름을 담은 배열
+        var mobile_keys = new Array('iPhone','iPad','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+        
+        for(var i in mobile_keys){
+            //브라우저의 에이전트 정보에 모바일이름과 매치되는 글자가 있다면
+            if(navigator.userAgent.match(mobile_keys[i])){
+                alert('모바일기기에 접속했습니다.');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

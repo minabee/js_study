@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 정적생성 -->
+    <h1>제목태그1</h1>
+
+    <script>
+        //createElement('태그명') : 요소를 생성해주는 메서드.
+
+        //동적생성
+        var h2 = document.createElement('h2');
+
+        h2.innerHTML = '제목태그2'; //문자열삽입
+
+        document.body.appendChild(h2); //바디태그의 자손으로 h2요소를 삽입하겠다
+    </script>
+</body>
+</html>

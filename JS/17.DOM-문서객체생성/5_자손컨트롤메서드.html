@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1 class="h1">제목태그1</h1>
+        <p class="p">문단태그</p>
+    </div>
+    <script>
+        //0.문서객체 선택
+        var box = document.querySelector('.box');
+        var h1 = document.querySelector('.h1');
+        var p = document.querySelector('.p');
+
+
+        //1.removeChild(요소) : 자손제거 메서드
+        box.removeChild(p);
+
+        //2.appendChild(요소) : 자손추가 메서드
+        var h2 = document.createElement('h2');
+        h2.innerText = '제목태그2';
+        box.appendChild(h2);
+
+        //3.replaceChild(새로운요소,이전요소) : 자손변경
+        var h3 = document.createElement('h3');
+        h3.innerText = '제목태그3';
+
+        box.replaceChild(h3,h1);
+    </script>
+    
+</body>
+</html>

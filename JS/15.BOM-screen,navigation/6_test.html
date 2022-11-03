@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //문제) 만약 모바일에서 접속했다면 모바일 다음으로 페이지를 이동시키시오. url) http://m.daum.net
+
+        //모바일기기이름을 담은 배열
+        var mobile_keys = new Array('iPhone','iPad','Android','BlackBerry','Windows Phone','Windows CE','LG','MOT','SAMSUNG','SonyEricsson','Nokia');
+
+        for(var i in mobile_keys){
+            if(navigator.userAgent.match(mobile_keys[i])){
+                location.assign('http://m.daum.net');
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

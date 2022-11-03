@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //reload() : 주소를 새로고침하는 메서드
+
+        //[n초가 지났습니다]라는 문구를 body에 쓰고, 10초 뒤 새로고침하게 만들어주세요.
+        var num = 1;
+
+        setInterval(function(){
+            document.write('<p>' + num + '초가 지났습니다</p>');
+
+            num++
+        },1000);
+
+        setTimeout(function(){
+            location.reload();
+        },10001);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

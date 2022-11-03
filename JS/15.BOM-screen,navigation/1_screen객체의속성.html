@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //새창을 [300x300]사이즈로 띄운 후 3초 뒤에 풀스크린으로 변경하시오.
+
+        var newWindow = window.open('','','width=300,height=300');
+
+        var w = screen.width; //화면 가로폭 반환
+        var h = screen.height; //화면 세로폭 반환
+
+        setTimeout(function(){
+            newWindow.resizeTo(w,h);
+        },3000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

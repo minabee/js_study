@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var img = document.createElement('img');
+
+        //setAttribute : 속성을 변경
+        img.setAttribute('src','img.png');
+        img.setAttribute('width',200);
+
+        document.body.appendChild(img);
+
+        var w = img.getAttribute('width');
+
+        alert(w);
+    </script>
+</body>
+</html>

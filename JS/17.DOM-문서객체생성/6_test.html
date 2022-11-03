@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="yearBox"></select>
+
+    <script>
+        //문제) <select>태그를 정적 생성 후 선택하고 올해 년도부터 1900년까지 <option>태그에 동적생성해서 년도 선택상자를 만드시오.
+        
+        //1. 문서객체선택
+        var yearBox = document.getElementById('yearBox');
+
+        //2. 옵션태그담는 변수선언
+        var yearOutput = '';
+
+        //3. 올해년도 구하는 변수 작성
+        var today = new Date();
+        var todayYear = today.getFullYear();
+
+        //4. 반복문
+        for(var i=todayYear;i>=1900;i--){
+            yearOutput += '<option>' + i + '년</option>';
+        }
+
+        yearBox.innerHTML = yearOutput;
+
+        
+    </script>
+</body>
+</html>

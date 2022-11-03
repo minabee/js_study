@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text01">제목태그</h1>
+    <h1 id="text02">제목태그</h1>
+    <h1 id="text03">제목태그</h1>
+
+
+    <script>
+        //getElementById() : 태그의 id값으로 문서객체를 선택
+
+
+        //1. 문서객체선택
+        var text01 = document.getElementById('text01');
+        var text02 = document.getElementById('text02');
+        var text03 = document.getElementById('text03');
+
+        //style : 문서객체의 css스타일 컨트롤 속성
+        //style.css속성명 = 값;
+        text01.style.color = 'red';
+        text01.style.backgroundColor = 'black';
+        text02.style.color = 'green';
+        text03.style.color = 'blue';
+    </script>
+</body>
+</html>

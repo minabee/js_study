@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //href속성 : 현재 페이지의 전체 url를 설정하거나 반환하는 속성
+        //url값을 반환 : location.href;
+        //url값을 변경 : location.href = 값;
+
+        //1. 속성값 받아오기
+        var url = location.href;
+
+        document.write(url);
+
+        //2. 속성값 변경하기
+        setTimeout(function(){
+            location.href = 'http://youtube.com';
+        },3000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

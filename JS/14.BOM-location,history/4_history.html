@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //back() : 주소내역을 뒤로 돌리는 메서드
+        function back(){
+            history.back();
+        }
+        //length : 주소내역 개수를 반환하는 속성
+        function num(){
+            alert(history.length);
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        <a href="test.html">테스트페이지가기</a>
+    </h1>
+    <button onclick="back()">뒤로가기</button>
+    <button onclick="num()">주소내역개수확인하기</button>
+</body>
+</html>

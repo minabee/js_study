@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1Text01"></h1>
+    <h1 id="h1Text02"></h1>
+    <h1 id="h1Text03"></h1>
+
+    <script>
+        //1.문서객체선택
+        var h1Text01 = document.getElementById('h1Text01');
+        var h1Text02 = document.getElementById('h1Text02');
+        var h1Text03 = document.getElementById('h1Text03');
+
+        h1Text01.innerHTML = '<a href="#">링크태크1</a>'; //텍스트에 있는 태그를 태그로 인식,display:none;반환됨
+        h1Text02.innerText = '<a href="#">링크태크2</a>'; //텍스트에 있는 태그를 인식 못함(모두 글자로 인식),display:none; 반환x
+        h1Text03.textContent = '<a href="#">링크태크3</a>'; //텍스트에 있는 태그를 인식 못함(모두 글자로 인식),display:none; 반환됨
+    </script>
+</body>
+</html>
