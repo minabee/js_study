@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 2000px;}
+        #text{position: fixed; top: 10px; left: 10px;}
+    </style>
+</head>
+<body>
+    <h1 id="text"></h1>
+
+    <script>
+        //1.문서객체 변수에 담기
+        var text = document.getElementById('text');
+
+        //2. 마우스 휠 처리
+        document.onwheel = function(e){ //마우스휠을 움직일때
+            var top = e.deltaY;
+
+            text.textContent = top;
+        }
+    </script>
+</body>
+</html>

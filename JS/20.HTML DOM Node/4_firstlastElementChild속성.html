@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px; padding: 10px; border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>제목태그</h1>
+        <p>문단태그</p>
+    </div>
+    <script>
+        //firstElementChild,lastElementChild는 요소를 직접적으로 선택하고자 할 때 사용됨.
+
+        //1.문서객체 변수에 담기
+        var box =document.getElementById('box');
+        
+        //2. 글자 색상변경
+        box.firstElementChild.style.color = 'red';
+        box.lastElementChild.style.color = 'blue';
+    </script>
+</body>
+</html>

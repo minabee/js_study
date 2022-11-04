@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{position: relative; width: 500px; height: 500px; border: 3px solid black;
+        margin: 50px;}
+        #circle{
+            position: absolute; left: 0; top: 0; background-color: navy; width: 50px;
+            height: 50px; border-radius: 25px; transform: translate(-50%,-50%); transition: .5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="circle"></div>
+    </div>
+
+    <script>
+        //1.문서객체 변수에 담기
+        var box = document.getElementById('box');
+        var circle = document.getElementById('circle');
+
+        //2. box에서 마우스를 움직일 때 circle이 따라다니게 처리
+        box.onmousemove = function(e){
+            var x = e.offsetX;
+            var y = e.offsetY;
+
+            circle.style.left = x +'px';
+            circle.style.top = y +'px';
+        }
+    </script>
+</body>
+</html>

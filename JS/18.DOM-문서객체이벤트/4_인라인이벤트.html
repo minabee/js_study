@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="this.style.color='red';">제목태그1</h1>
+    <h2 onclick="styleChange(this)">제목태그1</h2> <!-- this(나)에게 적용함 -->
+    
+    <script>
+        //인라인 이벤트 : 태그에 직접 이벤트타입을 속성으로 작성하는 것.
+
+        function styleChange(x){ //x로 매개변수를 줌
+            x.style.color = 'yellow';
+            x.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+</html>

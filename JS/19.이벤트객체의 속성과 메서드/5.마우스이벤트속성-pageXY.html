@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text01"></h1>
+    <h1 id="text02"></h1>
+
+    <script>
+        //1.문서객체 변수에 담기
+        var text01 = document.getElementById('text01');
+        var text02 = document.getElementById('text02');
+
+        //2. body전체에서 마우스를 움직일 때 마우스 포인터 좌표값을 h1태그에 반환
+        document.onmousemove = function(e){ //마우스가 움직일때
+            var x = e.pageX;
+            var y = e.pageY;
+
+            text01.textContent = x;
+            text02.textContent = y;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text">제목태그</h1>
+    <h1 class="text">제목태그</h1>
+    <h1 class="text">제목태그</h1>
+
+    <script>
+        //1. 문서객체 변수에 담기
+        var h1 = document.querySelectorAll('.text');
+
+        //2. 글자색상 변경
+        var c = ['red','green','blue'];
+
+        for(var i =0;i<h1.length;i++){
+            h1[i].style.color = c[i];
+        }
+    </script>
+</body>
+</html>

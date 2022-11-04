@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        h1{margin: 20px; padding: 20px; border: 3px solid navy;}
+        a{display: inline-block; padding: 20px; border: 3px solid navy;}
+    </style>
+</head>
+<body>
+    <h1 id="title">
+        <a href="#" id="link">링크태그</a>
+    </h1>
+
+    <script>
+        //캡쳐링(capturing) : 이벤트가 하위 요소로 전파되는 단계.
+        //타깃(target) : 이벤트가 실제 타깃 요소에 전달되는 단계.
+        //버블링(bubbling) : 이벤트가 상위요소로 전파되는 단계.
+
+        var title = document.getElementById('title');
+        var link = document.getElementById('link');
+
+        title.onclick = function(){
+            this.style.backgroundColor = 'blue';
+        }
+        link.onclick = function(){
+            this.style.backgroundColor = 'red'; //클릭하면 부모도 같이 컬러가 바뀜(버블링)
+        }
+    </script>
+</body>
+</html>

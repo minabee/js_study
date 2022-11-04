@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <a href="http://www.youtube.com" id="link">유튜브 바로가기</a>
+    </h1>
+
+    <script>
+        //preventDefault() : 요소가 갖고있는 기본이벤트를 제거해주는 메서드.
+        var link =document.getElementById('link');
+
+        link.addEventListener('click',function(e){
+            e.preventDefault();
+
+            var url = this.getAttribute('href');
+
+            var q = confirm('유튜브로 이동하시겠습니까?');
+
+            if(q){ //확인버튼을 눌렀다면
+                location.assign(url);
+            }
+        });
+    </script>
+</body>
+</html>

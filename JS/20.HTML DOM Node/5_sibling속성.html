@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px; padding: 10px; border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">제목태그</h1>
+        <p id="text">문단태그</p>
+    </div>
+    <script>
+        //1. 문서객체 변수에 담기
+        var title = document.getElementById('title');
+        var text = document.getElementById('text');
+
+        //2. 글자 색상변경
+        title.nextElementSibling.style.color = 'red';
+        text.previousElementSibling.style.color = 'blue';
+    </script>
+</body>
+</html>

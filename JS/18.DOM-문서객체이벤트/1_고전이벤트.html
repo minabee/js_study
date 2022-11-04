@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">제목태그</h1>
+    <script>
+        //문서객체.on이벤트타입명 = 이벤트핸들러;
+
+        //h1태그를 클릭하면 글자색이 빨간색으로 변경
+
+        //1.문서객체 선택
+        var text = document.getElementById('text');
+
+        //2.이벤트
+        text.onclick = function(){
+            //this : 객체가 코드블록 내부에서 자기자신을 호출하는 것
+            this.style.color = 'red';
+        }
+    </script>
+</body>
+</html>

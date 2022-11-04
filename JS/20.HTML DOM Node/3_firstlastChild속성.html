@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px; padding: 10px; border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>제목태그</h1>
+        <p>문단태그</p>
+    </div>
+    <script>
+        //1.문서객체 변수에 담기
+        var box =document.getElementById('box');
+        
+        //2. 자손 글자색 변경 
+        // box.firstChild.style.color ='red'; 첫번째 자손이 공백이라 에러
+
+        //3. 글자 넣기
+        box.firstChild.textContent = '첫번째 자손';
+        box.lastChild.textContent = '마지막 자손';
+    </script>
+</body>
+</html>

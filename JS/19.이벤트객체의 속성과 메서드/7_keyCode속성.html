@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textbox">
+    <p>키코드 : <span id="result"></span></p>
+
+    <script>
+        //1. 문서객체 변수에 담기
+        var textbox = document.getElementById('textbox');
+        var result = document.getElementById('result');
+
+        //2.키코드 이벤트 발생
+        textbox.addEventListener('keyup',function(e){ //keyup : 키보드를 눌렀다 뗐을 때
+            var code = e.keyCode;
+
+            result.textContent = code;
+        });
+    </script>
+</body>
+</html>

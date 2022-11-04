@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text">제목태그</h1>
+
+    <script>
+        //removeEventListener(이벤트타입,콜백함수); : 문서객체에 이벤트를 제거해주는 메서드.
+
+        //h1태그에 마우스 올리면 배경색은 검정색, 글자색은 노란색으로 처리, 마우스를 내리면 원래 상태로 처리
+        //10초 후에는 mouseenter이벤트를 제거
+
+        //1. 문서객체선택
+        var text = document.getElementById('text');
+
+        //2. 스타일변화함수
+        function styleChange(){
+            this.style.color = 'yellow';
+            this.style.background = 'black';
+        }
+
+        //3. 이벤트연결
+        text.addEventListener('mouseenter',styleChange);
+        text.addEventListener('mouseleave',function(){
+            this.style.color = 'black';
+            this.style.backgroundColor = 'white';
+        });
+
+        //4. 10초 뒤 mouseenter이벤트 제거
+        setTimeout(function(){
+            text.removeEventListener('mouseenter',styleChange);
+        },10001);
+    </script>
+</body>
+</html>
